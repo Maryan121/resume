@@ -107,8 +107,6 @@ main{
     width: 100%;
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: 30% auto;
-    justify-content: space-between;
     gap: 2rem;
 }
 .skills-main-ul{
