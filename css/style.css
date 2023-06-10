@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@200;500;700&family=Commissioner:wght@200;400;500;700&family=Dancing+Script:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;500;700;800&family=Josefin+Sans:wght@300&family=Karla:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:wght@300;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #fff;
+    width: 95%;
+    padding: 2rem;    
+    margin: .4rem auto;
+    margin-left: 7px;
+    box-shadow:  0 0 10px black;
+
+}
+
+.name{
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.career{
+    color: purple;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000063;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+.name-sec{
+    display: flex;
+    flex-direction: column;
+}
+.portfolioLink{
+    word-break: break-all;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact li{
+    list-style-type: none;
+}
+.contact li a{
+    display: flex;
+    align-items: center;    
+    gap: 4px;
+}
+
+.linkIcons{
+    width: 15px;
+    height: 20px;
+}
+hr{
+    width: 100%;
+}
+
+/* main section */
+main{
+    padding: 1rem  0  2rem ;
+    padding-right: 0;
+    display: grid;
+    gap: 2rem;
+}
+.first-sec ul,.second-sec ul{
+    padding: 0 1rem;
+}
+.first-sec li{
+    margin-top: 1rem;
+
+}
+.sub-titles{
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .75px;
+}
+.description{
+    font-weight: 300;
+    line-height: 1.3rem;
+    font-family: sans-serif;
+    color:rgb(83, 82, 82);
+}
+.projectLink{
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.048);
+   
+}
+.highlighted{
+    color: black;
+    font-weight: 500;
+}
+
+/* second section */
+.second-sec{
+    width: 100%;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 30% auto;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.skills-main-ul{
+    width: 100%;
+    gap: 1.5rem;
+}
+.skills{
+    width: 100%;
+}
+.skills-main-ul li{
+    margin-top: .8rem;
+    text-transform: uppercase;
+    color: black;
+    font-size: .8rem;
+    font-family: sans-serif;
+}
+
+/* education */
+.education ul li{
+    margin-top: 1rem;
+}
+
+
+@media(min-width:541px){
+
+    .container{
+        width: 45%;
+        margin: .5rem auto;
+    }
+}
+
+@media (width:712px),(width:600px),(width:800px),(width:640px){
+    .container{
+        width: 70%;
+    }
+}
+
+
