@@ -13,135 +13,136 @@ body{
     box-sizing: border-box;
 }
 .container{
-    background-color: #fff;
-    width: 95%;
+    width: 100%;
     padding: 2rem;    
-    margin: .4rem auto;
-    margin-left: 7px;
     box-shadow:  0 0 10px black;
-
+    background-color: rgb(34, 34, 34);
 }
 
-.name{
-    font-weight: 300;
-    text-transform: capitalize;
-}
-.career{
-    color: purple;
-    font-size: 1.3rem;
-    text-transform: capitalize;
-}
 header{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #00000063;
-    padding-bottom: 1rem;
-    gap: 1rem;
+    padding: 1rem;
 }
 .name-sec{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
 }
-.portfolioLink{
-    word-break: break-all;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
+.name{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
+.contact{
+    margin-top: .7rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;    
+    /* flex-wrap: wrap; */
+}
 .contact li{
     list-style-type: none;
 }
 .contact li a{
     display: flex;
-    align-items: center;    
-    gap: 4px;
+    align-items: center;
+    gap: .2rem;
+    color: #beb9b9;
+}
+.contact li a i{
+    color: green;
+}
+.portfolioLink{
+    word-break: break-all;
 }
 
-.linkIcons{
-    width: 15px;
-    height: 20px;
-}
-hr{
-    width: 100%;
-}
+
 
 /* main section */
 main{
-    padding: 1rem  0  2rem ;
-    padding-right: 0;
+    color: #d8d7d7;
+    padding: 1rem .5rem;
+}
+.main-cont{
     display: grid;
-    gap: 2rem;
 }
-.first-sec ul,.second-sec ul{
-    padding: 0 1rem;
+.portfolio-sec{
+    display: flex;
+    align-items: center;
 }
-.first-sec li{
-    margin-top: 1rem;
-
-}
-.sub-titles{
+.portfolio-sec strong{
     text-transform: capitalize;
-    font-weight: 500;
-    letter-spacing: .75px;
+    color: #d8d7d7;
 }
-.description{
-    font-weight: 300;
+
+.my-work{
+    margin: 1rem 0;
+}
+.my-work h3{
+    text-transform: capitalize;
+    color: #efeded;
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+}
+.my-work h4{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+.my-work .main-ul{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.my-work ul li{
+    color: #beb9b9;
+    font-size: .9rem;
     line-height: 1.3rem;
-    font-family: sans-serif;
-    color:rgb(83, 82, 82);
 }
-.projectLink{
-    color: purple;
-    background-color: rgba(0, 0, 0, 0.048);
-   
+.my-work ul li a{
+    color: rgb(134, 133, 236);
 }
-.highlighted{
-    color: black;
-    font-weight: 500;
+/* skills */
+.skills-cont-ul{
+    display: flex;
+    gap: 4rem;
 }
-
-/* second section */
-.second-sec{
-    width: 100%;
-    padding: 0 1rem;
+.skills-cont-ul ul{
+    margin-top: .4rem;
     display: grid;
-    gap: 2rem;
+    gap: .5rem;
 }
-.skills-main-ul{
-    width: 100%;
-    gap: 1.5rem;
+.skills-cont-ul ul li{
+    text-transform: capitalize;
+    font-size: .9rem;
 }
-.skills{
-    width: 100%;
-}
-.skills-main-ul li{
-    margin-top: .8rem;
-    text-transform: uppercase;
-    color: black;
-    font-size: .8rem;
-    font-family: sans-serif;
-}
-
-/* education */
-.education ul li{
+.education{
     margin-top: 1rem;
 }
+.education-sub-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.education p{
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+}
 
 
-@media(min-width:541px){
-
+@media (min-width:769px){
     .container{
         width: 45%;
-        margin: .5rem auto;
+        margin:  0 auto;
     }
-}
-
-@media (width:712px),(width:600px),(width:800px),(width:640px){
-    .container{
-        width: 70%;
-    }
+   
 }
 
 
