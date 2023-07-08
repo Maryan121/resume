@@ -5,57 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume</title>
     <script src="https://kit.fontawesome.com/f22559516b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@200;500;700&family=Commissioner:wght@200;400;500;700&family=Dancing+Script:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;500;700;800&family=Josefin+Sans:wght@300&family=Karla:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:wght@300;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 2rem;    
+    box-shadow:  0 0 10px black;
+    background-color: rgb(34, 34, 34);
+}
+
+header{
+    padding: 1rem;
+}
+.name-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+.name{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.contact{
+    margin-top: .7rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;    
+    /* flex-wrap: wrap; */
+}
+.contact li{
+    list-style-type: none;
+}
+.contact li a{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    color: #beb9b9;
+}
+.contact li a i{
+    color: green;
+}
+.portfolioLink{
+    word-break: break-all;
+}
+
+
+
+/* main section */
+main{
+    color: #d8d7d7;
+    padding: 1rem .5rem;
+}
+.main-cont{
+    display: grid;
+}
+.portfolio-sec{
+    display: flex;
+    align-items: center;
+}
+.portfolio-sec strong{
+    text-transform: capitalize;
+    color: #d8d7d7;
+}
+
+.my-work{
+    margin: 1rem 0;
+}
+.my-work h3{
+    text-transform: capitalize;
+    color: #efeded;
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+}
+.my-work h4{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+.my-work .main-ul{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.my-work ul li{
+    color: #beb9b9;
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+.my-work ul li a{
+    color: rgb(134, 133, 236);
+}
+/* skills */
+.skills-cont-ul{
+    display: flex;
+    gap: 4rem;
+}
+.skills-cont-ul ul{
+    margin-top: .4rem;
+    display: grid;
+    gap: .5rem;
+}
+.skills-cont-ul ul li{
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+.education{
+    margin-top: 1rem;
+}
+.education-sub-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.education p{
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+}
+
+
+@media (min-width:769px){
+    .container{
+        width: 45%;
+        margin:  0 auto;
+    }
+   
+}
+
+
+
+   </style>
     <div class="container cont">
         <header>
             <div class="name-sec">
                 <h4 class="name">maryan mohamuud</h4>
-                <strong class="career ">frontend developer</strong>
-                <a href="https://maryan121.github.io/portfolio/" class="portfolioLink " >https://maryan121.github.io/portfolio/</a>
+                    <ul class="contact">
+                       <li><a href="mailto:maryanmaxamuudsabriye@gmail.com"><i class="fa-solid fa-envelope"></i>gmail <b style="color: rgb(78, 78, 78);">|</b></a></li> 
+                       <li><a href="https://maryan121.github.io/portfolio/"><i class="fa-solid fa-satellite-dish"></i>portfolio <b style="color: rgb(78, 78, 78);">|</b></a></li> 
+                        <li><a href="https://www.linkedin.com/in/maryan-maxamuud-b2aa351ab/"><i class="fa-brands fa-linkedin"></i>linkedin <b style="color: rgb(78, 78, 78);"> |</b></a></li>
+                        <li><a href="https://github.com/Maryan121?tab=repositories"><i class="fa-brands fa-github"></i>github</a></li> 
+                    </ul>
             </div>
-            <nav class="links-sec">
-                <ul class="contact">
-                   <li><a href="mailto:maryanmaxamuudsabriye@gmail.com"><i class="fa-solid fa-envelope"></i>gmail</a></li> 
-                   <li><a href="https://github.com/Maryan121?tab=repositories"><i class="fa-brands fa-github"></i>github</a></li> 
-                    <li><a href="https://www.linkedin.com/in/maryan-maxamuud-b2aa351ab/"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
-                </ul>
-            </nav>
+            
         </header>
-        <hr>
+        <hr style="border: solid 1px rgba(245, 245, 245, 0.363); width: 100%;">
         <main>
-            <section class="first-sec">
-                <h3 class="sub-titles">experience</h3>
-                <ul>
-                    <li class="description">i worked on multipage restaurant website and completed using <span class="highlighted">html, css, javascript</span> and <span class="highlighted">bootstrap.</span> <a href="https://maryan121.github.io/restaurant-web/" class="projectLink">restaurant-website</a></li>
-                    <li class="description">using <span class="highlighted">react js</span>  i built a movie website which have 3 pages in total <a href="https://maryan121.github.io/comeTv/" class="projectLink">movie website</a></li>
-                    <li class="description">getting customers' information providing products <span class="highlighted">based on their location</span> is what every business-owner need so i built a simple project which allows you to get user's info like: <span class="highlighted">location, country, countryCode</span> and etc. <a href="https://maryan121.github.io/ip-tracker/" class="projectLink">ip-address-tracker</a></li>
-                </ul>
-            </section>
-            <hr>
-            <section class="second-sec">
-                <div class="skills">
-                    <h3 class="sub-titles">skills</h3>
-                    <div class="skills-main-ul">
-                        <li class="description">html</li>
-                        <li class="description">css</li> 
-                        <li  class="description">vanilla js</li>
-                        <li  class="description">react js</li>
-                        <li  class="description">git</li> 
-                    </div>
-                </div>
-                <div class="education">
-                    <h3 class="sub-titles">education</h3>
-                    <ul>
-                        <li class="description">as a self-taught frontend developer i started learning <span class="highlighted">html,css</span> built some projects.</li>
-                        <li  class="description">then started javascript understood <span class="highlighted">ES6</span> concepts</li>
-                        <li  class="description">after that i was ready to take the next step into the react world.</li>
-                        <li  class="description">my main point was learning with building projects and i also felt the need to use bootstrap and learnt it.</li>
-                        <li  class="description">after studying and building projects i felt the need to make them public so the concept of <span class="highlighted">github</span>  and <span class="highlighted">git</span> came and i learnt.</li>
+            <div class="main-cont">
+                <div class="my-work">
+                    <h3>frontend web developer</h3>
+                    <ul class="main-ul">
+                        <li>designed and developed Entertainment website with <b>React.js</b> -> <a href="https://maryan121.github.io/comeTv/">comeTv</a>.</li>
+                        <li>created a responsive multipage website called <b>payApi</b> using javascript, html and css -> <a href="https://maryan121.github.io/payApi/">payApi</a>.</li>
+                        <li>designed and built a large restaurant website which contain 6 pages <b>home, menu, gallery, events</b> and etc.<a href="https://maryan121.github.io/restaurant-web/">yummyFood</a>.</li>
+                        <li>with javascript and API resquest i built <a href="https://maryan121.github.io/ip-tracker/">ip-address-tracker</a></li>
+                    </ul>
+                    <h4>mini projects</h4>
+                    <ul> with html,css & javascript:
+                        <li style="margin-top: .5rem;">interactive card details <a href="https://maryan121.github.io/interactive-card-details/">card details</a></li>
+                        <li>Advice generator App <a href="https://maryan121.github.io/advice-generator-app/">advice generator</a> fetching data from API.</li>
+                        <li>space tourism website <a href="https://maryan121.github.io/space-tourism-website/">space tourism</a>.</li>
+                        <li>agency landing page <a href="https://maryan121.github.io/Sunnyside-agency-landing-page/">landingpage</a></li>
                     </ul>
                 </div>
-            </section>
+                <div class="skills-con">
+                    <h3 style="letter-spacing: 1px;">skills</h3>
+                    <ul class="skills-cont-ul">
+                        <ul>
+                            <li class="description">vanilla js</li>
+                            <li class="description">html</li>
+                            <li class="description">css</li> 
+                            <li  class="description">bootstrap</li>
+                        </ul>
+                    
+                        <ul>
+                            <li  class="description">react js</li>
+                            <li  class="description">git & github</li> 
+                            <li  class="description">npm, yarn</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="education">
+                    <div class="education-sub-cont">
+                        <h3>Education</h3>
+                        <p>( 9 months )</p>
+                    </div>
+                    
+                    <p>i am a self-taught frontend developer , google and youtube were my sources i had during my journey and some other website.</p>
+                </div>
+
+                </div>
+                
+            </div>
         </main>
     </div>
     
